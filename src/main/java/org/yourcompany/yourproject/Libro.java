@@ -16,7 +16,9 @@ public class Libro
 
     public Ejemplar crearEjemplar(String cod)
     {
-        return null;
+        Ejemplar nuevoEjemplar = new Ejemplar(cod, this);
+        ejemplares.add(nuevoEjemplar);
+        return nuevoEjemplar;
     }
 
     public String getTitulo()
