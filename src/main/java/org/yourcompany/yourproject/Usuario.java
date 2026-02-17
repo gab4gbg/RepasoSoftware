@@ -1,7 +1,5 @@
 package org.yourcompany.yourproject;
 
-import javax.xml.namespace.QName;
-
 public abstract class Usuario
 {
     protected String id;
@@ -17,12 +15,12 @@ public abstract class Usuario
 
     public String getNombre()
     {
-        return nombre;
+        return this.nombre;
     }
 
     public String getEmail()
     {
-        return email;
+        return this.email;
     }
 
 }
