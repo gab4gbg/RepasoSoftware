@@ -1,4 +1,6 @@
 package org.yourcompany.yourproject;
 
-public class Notificador {
+public interface Notificador
+{
+    void enviar(String destino, String mensaje);
 }
