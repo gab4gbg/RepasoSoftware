@@ -1,6 +1,5 @@
 package org.yourcompany.yourproject;
 
-
 public class Main
 {
 	public static void main(String args[])
@@ -15,6 +14,14 @@ public class Main
 
 		biblioteca.agregarSocio(socio);
 
+		Libro libro = new Libro("123","como robarse una empanada");
+
+		biblioteca.agregarLibro(libro);
+
+		libro.crearEjemplar("e1");
+
 		System.err.println(biblioteca.darSocios().get(0).getNombre());
+		IO.println(biblioteca.darLibros());
+		IO.println(biblioteca.darBibliotecarios().get(0).getNombre());
 	}
 }

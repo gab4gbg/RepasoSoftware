@@ -20,4 +20,12 @@ public class Ejemplar
     {
         return libro;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Ejemplar{" +
+                "codigo='" + codigo + '\'' +
+                '}';
+    }
 }

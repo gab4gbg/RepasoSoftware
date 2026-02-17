@@ -6,6 +6,7 @@ public class Biblioteca
 {
     private ArrayList<Socio> socios = new ArrayList<>();
     private ArrayList<Bibliotecario> bibliotecarios = new ArrayList<>();
+    private ArrayList<Libro> libros = new ArrayList<>();
 
     public Biblioteca() {}
 
@@ -19,12 +20,24 @@ public class Biblioteca
         return bibliotecarios;
     }
 
+    public ArrayList<Libro> darLibros()
+    {
+        return libros;
+    }
+
     public void agregarSocio(Socio socio) {
         socios.add(socio);
     }
 
     public void agregarBibliotecario(Bibliotecario bibliotecario)
     {
-        bibliotecarios.add(bibliotecario);     }
+        bibliotecarios.add(bibliotecario);
+    }
+    public void agregarLibro(Libro libro)
+    {
+        libros.add(libro);
+    }
+
+
 }
 
